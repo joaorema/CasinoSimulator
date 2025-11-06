@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import Button from "../components/button";
 import TextBox from "../components/textBox";
 import { useNavigate } from "react-router-dom";
@@ -54,6 +54,7 @@ function DiceGame() {
         setWinner(false);
       }
     }, 600);
+    console.log(diceValue);
   };
 
   return (
