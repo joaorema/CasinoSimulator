@@ -18,7 +18,7 @@ function DiceGame() {
       ? "text-emerald-400"
       : iswinner === false
       ? "text-rose-400"
-      : "text-slate-100";
+      : "text-rose-300";
 
   const rollDice = () => {
     if (guess == "" && range == "") {

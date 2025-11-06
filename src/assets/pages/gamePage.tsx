@@ -1,28 +1,46 @@
 import Button from "../components/button";
 import { useNavigate } from "react-router-dom";
-
-
+import GameCard from "../components/gameCard";
 
 function GamePage() {
-    const navigate = useNavigate();
-    const backBtnClick = () =>{
-        navigate("/");
-    };
-    const dicebtn = () =>{
-        navigate("/dice");
-    }
+  const navigate = useNavigate();
+  const backBtnClick = () => {
+    navigate("/");
+  };
+
+  const Games = [
+    {
+      title: "Dice Roll",
+      videoSrc: "../../public/videos/dicerollvideo.webm",
+      onClick: () => navigate("/dice"),
+    },
+    {
+      title: "Roullete",
+      imageSrc: "../../public/vite.svg",
+      onClick: () => navigate("/"),
+    },
+    {
+      title: "Game 3",
+      imageSrc: "../../public/vite.svg",
+      onClick: () => navigate("/"),
+    },
+    {
+      title: "Game 4",
+      imageSrc: "../../public/vite.svg",
+      onClick: () => navigate("/"),
+    },
+  ];
   return (
     <div className="flex flex-col flex-1 items-center justify-center gap-6">
       <h2 className="text-2xl font-semibold">Choose Your Game 🎮</h2>
       <div className="grid grid-cols-2 gap-6">
-        <Button label="Dice" onClick={dicebtn}/>
-        <Button label="Game 2" />
-        <Button label="Game 3" />
-        <Button label="Game 4" />
+        {Games.map((game, index) => (
+          <GameCard key={index} {...game} />
+        ))}
       </div>
-        <Button label="Back" onClick={backBtnClick} />
+      <Button label="Back" onClick={backBtnClick} />
     </div>
   );
 }
 
-export default GamePage
+export default GamePage;
