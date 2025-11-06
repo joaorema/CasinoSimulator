@@ -11,9 +11,9 @@ const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
       onClick={onClick}
       className="
         px-10 py-5 
-        bg-red-400 
+        bg-linear-to-br from-blue-900 via-indigo-800 to-purple-600 
         hover:bg-indigo-700 
-        text-white 
+        text-white
         font-semibold 
         rounded-xl 
         shadow-md 
