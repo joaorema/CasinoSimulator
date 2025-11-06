@@ -7,6 +7,7 @@ A simple chill mini app built with **React**, **TypeScript**, and **Tailwind CSS
 - **Vite**
 - **Tailwind CSS**
 - **React Router DOM**
+- **THREE.js**
 
 ## 🧩 Getting Started
 ```bash
