@@ -12,12 +12,14 @@ function GamePage() {
     {
       title: "Dice Roll",
       videoSrc: "../../public/videos/dicerollvideo.webm",
+      //imageSrc: "../../public/vite.svg",
       onClick: () => navigate("/dice"),
     },
     {
-      title: "Roullete",
-      imageSrc: "../../public/vite.svg",
-      onClick: () => navigate("/"),
+      title: "Coin Spin",
+      videoSrc: "../../public/videos/coinvideo.webm",
+      //imageSrc: "../../public/vite.svg",
+      onClick: () => navigate("/coin"),
     },
     {
       title: "Game 3",

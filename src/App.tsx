@@ -4,6 +4,7 @@ import Navbar from "./assets/components/navbar";
 import Footer from "./assets/components/footer";
 import GamePage from "./assets/pages/gamePage";
 import DiceGame from "./assets/pages/dicePage";
+import CoinPage from "./assets/pages/coinPage";
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/games" element={<GamePage />} />
         <Route path="/dice" element={<DiceGame />} />
+        <Route path="/coin" element={<CoinPage />} />
       </Routes>
       <Footer />
     </div>

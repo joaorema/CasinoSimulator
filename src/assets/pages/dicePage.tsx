@@ -35,7 +35,13 @@ function DiceGame() {
     }
     const playernbr = parseInt(guess);
     const currentRange = parseInt(range);
-    if (playernbr < 0 || playernbr > currentRange) {
+    if(isNaN(playernbr) || isNaN(currentRange))
+    {
+      setMessage("Use only numbers");
+      setWinner(null);
+      return;
+    }
+    if (playernbr < 0 || playernbr > currentRange ) {
       setMessage("Pick a number between 0 and Range");
       setWinner(null);
       return;
