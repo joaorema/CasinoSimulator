@@ -17,7 +17,7 @@ function GamePage() {
     },
     {
       title: "Coin Spin",
-      videoSrc: "../../public/videos/coinvideo.webm",
+      videoSrc: "../../public/videos/coinVideo.webm",
       //imageSrc: "../../public/vite.svg",
       onClick: () => navigate("/coin"),
     },
